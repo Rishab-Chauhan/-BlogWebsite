@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luminous | Modern Blog</title>
+    <meta name="description" content="A beautiful blog with engaging content">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">Luminous</a>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle">Categories <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><i class="fas fa-utensils"></i> Food & Drink</a></li>
+                                <li><a href="#"><i class="fas fa-plane"></i> Travel</a></li>
+                                <li><a href="#"><i class="fas fa-laptop-code"></i> Technology</a></li>
+                                <li><a href="#"><i class="fas fa-heartbeat"></i> Health</a></li>
+                                <li><a href="#"><i class="fas fa-paint-brush"></i> Design</a></li>
+                                <li><a href="#"><i class="fas fa-book"></i> Books</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#about-section">About</a></li>
+                        <li><a href="#footer">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <button class="search-btn" aria-label="Search"><i class="fas fa-search"></i></button>
+                    <button class="theme-toggle" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
+                    <button class="mobile-menu-btn" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <span class="logo">Luminous</span>
+            <button class="mobile-menu-close"><i class="fas fa-times"></i></button>
+        </div>
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li class="mobile-dropdown">
+                    <a href="#" class="mobile-dropdown-toggle">Categories <i class="fas fa-chevron-down"></i></a>
+                    <ul class="mobile-dropdown-menu">
+                        <li><a href="#"><i class="fas fa-utensils"></i> Food & Drink</a></li>
+                        <li><a href="#"><i class="fas fa-plane"></i> Travel</a></li>
+                        <li><a href="#"><i class="fas fa-laptop-code"></i> Technology</a></li>
+                        <li><a href="#"><i class="fas fa-heartbeat"></i> Health</a></li>
+                        <li><a href="#"><i class="fas fa-paint-brush"></i> Design</a></li>
+                        <li><a href="#"><i class="fas fa-book"></i> Books</a></li>
+                    </ul>
+                </li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu-footer">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay">
+        <div class="search-container">
+            <button class="search-close"><i class="fas fa-times"></i></button>
+            <form class="search-form">
+                <input type="text" placeholder="Search articles..." class="search-input">
+                <button type="submit" class="search-submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">“Failure is not the opposite of success: it’s part of success.” </h1>
+                <p class="hero-subtitle">Explore our collection of thought-provoking articles and creative ideas</p>
+                <a href="#featured-articles" class="btn btn-primary">Start Reading</a>
+                <a href="#" class="btn btn-start-writing">Start Writing</a>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Featured Posts -->
+    <section id="featured-articles" class="featured-posts">
+        <div class="container">
+            <h2 class="section-title">"Featured Articles"</h2>
+            <div class="slider-container">
+                <button class="slider-arrow slider-prev" aria-label="Previous article">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="featured-slider">
+                    <article class="featured-card">
+                        <div class="card-image">
+                            <img src="https://wallpaperaccess.com/full/185289.jpg" alt="Featured post" loading="lazy">
+                            <span class="category-tag">Travel</span>
+                        </div>
+                        <div class="card-content">
+                            <h3><a href="posts/post1.html">The Ultimate Guide to Sustainable Travel in 2023</a></h3>
+                            <p class="card-excerpt">Discover how to explore the world while minimizing your environmental impact and supporting local communities.</p>
+                            <div class="card-meta">
+                                <span class="author">By Sarah Johnson</span>
+                                <span class="date">May 15, 2023</span>
+                                <span class="read-time">8 min read</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="featured-card">
+                        <div class="card-image">
+                            <img src="https://th.bing.com/th/id/OIP.WtAuAPRSQ-uKMburVdWEygHaEn?rs=1&pid=ImgDetMain" alt="Featured post" loading="lazy">
+                            <span class="category-tag">Technology</span>
+                        </div>
+                        <div class="card-content">
+                            <h3><a href="posts/post2.html">How AI is Transforming Creative Industries</a></h3>
+                            <p class="card-excerpt">Exploring the ways artificial intelligence is revolutionizing art, music, and content creation.</p>
+                            <div class="card-meta">
+                                <span class="author">By Michael Chen</span>
+                                <span class="date">April 28, 2023</span>
+                                <span class="read-time">6 min read</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="featured-card">
+                        <div class="card-image">
+                            <img src="https://fitfoodiefinds.com/wp-content/uploads/2018/07/plant-based-1-572x1024.jpg" alt="Featured post" loading="lazy">
+                            <span class="category-tag">Food</span>
+                        </div>
+                        <div class="card-content">
+                            <h3><a href="#">Plant-Based Recipes for Busy Weeknights</a></h3>
+                            <p class="card-excerpt">Quick, delicious, and nutritious meals that come together in 30 minutes or less.</p>
+                            <div class="card-meta">
+                                <span class="author">By Emma Rodriguez</span>
+                                <span class="date">May 5, 2023</span>
+                                <span class="read-time">5 min read</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="featured-card">
+                        <div class="card-image">
+                            <img src="https://th.bing.com/th/id/OIP.GyaUDoR3BlSIvCfsUos20QHaHa?rs=1&pid=ImgDetMain" alt="Featured post" loading="lazy">
+                            <span class="category-tag">Health</span>
+                        </div>
+                        <div class="card-content">
+                            <h3><a href="#">The Science of Sleep: Why Quality Rest Matters</a></h3>
+                            <p class="card-excerpt">Understanding the importance of sleep and how to improve your sleep quality for better health.</p>
+                            <div class="card-meta">
+                                <span class="author">By Dr. Lisa Wong</span>
+                                <span class="date">May 20, 2023</span>
+                                <span class="read-time">7 min read</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="featured-card">
+                        <div class="card-image">
+                            <img src="https://th.bing.com/th/id/OIP.CyuUPw4xiNjIfXPyktlFlAHaEd?rs=1&pid=ImgDetMain" alt="Featured post" loading="lazy">
+                            <span class="category-tag">Design</span>
+                        </div>
+                        <div class="card-content">
+                            <h3><a href="#">The Future of Web Design: Trends to Watch</a></h3>
+                            <p class="card-excerpt">Exploring emerging design trends and technologies shaping the future of web development.</p>
+                            <div class="card-meta">
+                                <span class="author">By Alex Rivera</span>
+                                <span class="date">May 18, 2023</span>
+                                <span class="read-time">6 min read</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="featured-card">
+                        <div class="card-image">
+                            <img src="https://www.howsweeteats.com/wp-content/uploads/2023/05/Copy-of-Copy-of-Copy-of-Summer-Reading-List-1-728x971.png" alt="Featured post" loading="lazy">
+                            <span class="category-tag">Books</span>
+                        </div>
+                        <div class="card-content">
+                            <h3><a href="#">Must-Read Books That Will Change Your Perspective</a></h3>
+                            <p class="card-excerpt">A curated list of transformative books that challenge conventional thinking and inspire growth.</p>
+                            <div class="card-meta">
+                                <span class="author">By James Peterson</span>
+                                <span class="date">May 16, 2023</span>
+                                <span class="read-time">5 min read</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <button class="slider-arrow slider-next" aria-label="Next article">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="slider-dots"></div>
+        </div>
+    </section>
+
+    <!-- Latest Posts -->
+    <section class="latest-posts">
+        <div class="container">
+            <h2 class="section-title">"Latest Articles"</h2>
+            <div class="slider-container">
+                <button class="slider-arrow slider-prev latest-articles-prev" aria-label="Previous article">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="posts-grid">
+                    <article class="post-card">
+                        <div class="card-image">
+                            <img src="https://th.bing.com/th/id/OIP.GyaUDoR3BlSIvCfsUos20QHaHa?rs=1&pid=ImgDetMain" alt="Post image" loading="lazy">
+                            <span class="category-tag">Health</span>
+                        </div>
+                        <div class="card-content">
+                            <h3><a href="#">Morning Routines of Highly Productive People</a></h3>
+                            <p class="card-excerpt">Learn the habits that successful individuals swear by to start their days right.</p>
+                            <div class="card-meta">
+                                <span class="author">By David Wilson</span>
+                                <span class="date">May 20, 2023</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="post-card">
+                        <div class="card-image">
+                            <img src="https://th.bing.com/th/id/OIP.CyuUPw4xiNjIfXPyktlFlAHaEd?rs=1&pid=ImgDetMain" alt="Post image" loading="lazy">
+                            <span class="category-tag">Design</span>
+                        </div>
+                        <div class="card-content">
+                            <h3><a href="#">Minimalist Interior Design Principles</a></h3>
+                            <p class="card-excerpt">How to create serene, clutter-free spaces that promote wellbeing and focus.</p>
+                            <div class="card-meta">
+                                <span class="author">By Olivia Park</span>
+                                <span class="date">May 18, 2023</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="post-card">
+                        <div class="card-image">
+                            <img src="https://www.howsweeteats.com/wp-content/uploads/2023/05/Copy-of-Copy-of-Copy-of-Summer-Reading-List-1-728x971.png" alt="Post image" loading="lazy">
+                            <span class="category-tag">Books</span>
+                        </div>
+                        <div class="card-content">
+                            <h3><a href="#">Summer Reading List 2023</a></h3>
+                            <p class="card-excerpt">Our curated selection of must-read books for the coming season.</p>
+                            <div class="card-meta">
+                                <span class="author">By James Peterson</span>
+                                <span class="date">May 16, 2023</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="post-card">
+                        <div class="card-image">
+                            <img src="https://cdn.ramseysolutions.net/media/blog/retirement/investing/how-to-start-investing.jpg" alt="Post image" loading="lazy">
+                            <span class="category-tag">Finance</span>
+                        </div>
+                        <div class="card-content">
+                            <h3><a href="#">Smart Investing for Beginners</a></h3>
+                            <p class="card-excerpt">Essential strategies to start building wealth, even with limited funds.</p>
+                            <div class="card-meta">
+                                <span class="author">By Rachel Kim</span>
+                                <span class="date">May 14, 2023</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="post-card">
+                        <div class="card-image">
+                            <img src="https://sm.mashable.com/mashable_in/photo/default/mobile-photography-cover-copy_jf9d.jpg" alt="Post image" loading="lazy">
+                            <span class="category-tag">Photography</span>
+                        </div>
+                        <div class="card-content">
+                            <h3><a href="#">Mobile Photography Tips and Tricks</a></h3>
+                            <p class="card-excerpt">How to take professional-quality photos with just your smartphone.</p>
+                            <div class="card-meta">
+                                <span class="author">By Carlos Mendez</span>
+                                <span class="date">May 12, 2023</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="post-card">
+                        <div class="card-image">
+                            <img src="https://m.media-amazon.com/images/I/81F5yBKwsuL._RI_.jpg" alt="Post image" loading="lazy">
+                            <span class="category-tag">Wellness</span>
+                        </div>
+                        <div class="card-content">
+                            <h3><a href="#">The Science of Mindfulness</a></h3>
+                            <p class="card-excerpt">Evidence-based benefits of meditation and how to incorporate it into daily life.</p>
+                            <div class="card-meta">
+                                <span class="author">By Priya Sharma</span>
+                                <span class="date">May 10, 2023</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <button class="slider-arrow slider-next latest-articles-next" aria-label="Next article">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="slider-dots latest-articles-dots"></div>
+            <div class="load-more-container">
+                <button class="btn btn-primary load-more">Load More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about-section" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>"About Luminous"</h2>
+                    <p>Luminous is a digital publication dedicated to sharing inspiring stories, practical advice, and creative ideas. Our team of writers and experts cover a wide range of topics from travel and technology to wellness and design.</p>
+                    <p>We believe in quality over quantity, and every article we publish is carefully crafted to inform, inspire, and engage our readers.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://i.pinimg.com/originals/19/9f/d2/199fd29184c6cff24e3445f849af463e.gif" alt="Our team" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Feed -->
+    
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <a href="index.html" class="logo">Luminous</a>
+                    <p>A digital publication dedicated to sharing inspiring stories, practical advice, and creative ideas.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Travel</a></li>
+                        <li><a href="#">Food</a></li>
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Health</a></li>
+                        <li><a href="#">Design</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for weekly inspiration</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-secondary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2023 Luminous. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+</html>
