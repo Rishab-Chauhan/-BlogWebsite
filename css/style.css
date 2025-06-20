@@ -238,10 +238,9 @@ ul {
 }
 
 .main-nav a {
-    font-weight: 500;
-    position: relative;
-    padding: 0.5rem 0;
-    color: var(--text-color);
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
 }
 
 .main-nav a::after {
@@ -800,14 +799,19 @@ ul {
 }
 
 .dropdown-toggle {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.3rem;
+    padding: 0.5rem 0;
+    vertical-align: middle;
 }
 
 .dropdown-toggle i {
-    font-size: 0.8rem;
-    transition: var(--transition);
+    font-size: 0.7rem; /* or adjust as needed */
+    line-height: 1;
+    margin-top: 1px; /* tweak this if the arrow is still low */
+    position: relative;
+    top: 1px; /* fine-tune this to perfectly center it */
 }
 
 .dropdown:hover .dropdown-toggle i {
@@ -1511,4 +1515,59 @@ section:not(:last-child) {
     font-size: 1rem;
     line-height: 1.6;
     padding: 0 2rem;
+}
+
+/* Navbar Icon Hover Effects */
+.main-nav a i,
+.header-actions button i {
+  transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.main-nav a:hover i,
+.main-nav a.active i {
+  color: var(--primary-color);
+  transform: scale(1.18) translateY(-2px);
+  box-shadow: 0 2px 8px rgba(124, 77, 255, 0.18);
+}
+
+.header-actions button:hover i {
+  color: var(--primary-color);
+  transform: scale(1.18) translateY(-2px);
+  box-shadow: 0 2px 8px rgba(124, 77, 255, 0.18);
+}
+
+/* Dropdown menu icon hover */
+.dropdown-menu a i {
+  transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+.dropdown-menu a:hover i {
+  color: var(--primary-color);
+  transform: scale(1.18) translateY(-2px);
+  box-shadow: 0 2px 8px rgba(124, 77, 255, 0.18);
+}
+
+/* Mobile nav icon hover */
+.mobile-nav a i {
+  transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+.mobile-nav a:hover i {
+  color: var(--primary-color);
+  transform: scale(1.18) translateY(-2px);
+  box-shadow: 0 2px 8px rgba(124, 77, 255, 0.18);
+}
+
+/* Space between navbar icons and text */
+.main-nav a i,
+.header-actions button i,
+.dropdown-menu a i,
+.mobile-nav a i {
+  margin-right: 0.6em;
+}
+
+/* If icon is after text (like chevron), remove margin */
+.main-nav a i.fa-chevron-down,
+.dropdown-toggle i.fa-chevron-down,
+.mobile-dropdown-toggle i.fa-chevron-down {
+  margin-right: 0;
+  margin-left: 0.3em;
 }
